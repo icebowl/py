@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-inFile = open("words.txt", "r")
+inFile = open("wordlist.10000.txt", "r")
 line = inFile.readline()
 while line:
-    print(line)
+    if (len(line) < 4):
+        print(line)
     line = inFile.readline()
 
 inFile.close()
